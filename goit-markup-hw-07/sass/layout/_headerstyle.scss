@@ -1,0 +1,107 @@
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--maincolorblack);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+  transition: color 250ms var(--trainsition-timing-function);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--maincoloreff);
+}
+
+.menu-link.current {
+  color: var(--maincoloreff);
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.current::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: var(--maincoloreff);
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--maincolorsilver);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms var(--trainsition-timing-function);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--maincoloreff);
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+  color: var(--maincolorsilver);
+}
+
+.svg-logo {
+  fill: currentColor;
+  margin-right: 10px;
+  transition: fill 250ms var(--trainsition-timing-function);
+}
+
+.contacts-link:hover .svg-logo,
+.contacts-link:focus .svg-logo {
+  fill: var(--maincoloreff);
+}
+
+.logo {
+  margin-right: 94px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--maincolorblack);
+}
+.logo-style {
+  color: var(--maincoloreff);
+}
+.header {
+  border-bottom: 1px solid var(--borderheadercolor);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}

@@ -1,24 +1,15 @@
 .team {
   background: var(--maincolorbtteam);
 }
-.team-main-name {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--maincolorblack);
-  margin-bottom: 50px;
-}
 
-.team-list {
+.team__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.team-list-items {
+.team__items {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
@@ -28,7 +19,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-items-name {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -38,7 +29,7 @@
   margin-bottom: 10px;
 }
 
-.team-list-items-name-description {
+.team__description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -48,7 +39,7 @@
   margin-bottom: 16px;
 }
 
-.team-box {
+.team__box {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 32px;

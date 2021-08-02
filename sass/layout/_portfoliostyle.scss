@@ -1,14 +1,14 @@
-.main-modal-buttons-list {
+.filter__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.main-modal-buttons-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.modal-button {
+.filter__btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -33,7 +33,7 @@
   }
 }
 
-.main-images-name {
+.projects__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -41,7 +41,7 @@
   color: var(--maincolorblack);
 }
 
-.main-images-description {
+.projects__description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
@@ -49,21 +49,21 @@
   color: var(--maincolorsilver);
 }
 
-.main-images-items-list {
+.projects {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.main-images-items-item {
+.projects__item {
   flex-wrap: wrap;
   margin-top: 30px;
   margin-left: 30px;
   cursor: pointer;
 }
 
-.galery-box {
+.projects__box {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -72,7 +72,7 @@
   border-top: none;
 }
 
-.shadow-items {
+.projects__tool {
   display: block;
   position: relative;
   transition: box-shadow 250ms var(--trainsition-timing-function);
@@ -81,14 +81,14 @@
   &:focus {
     box-shadow: var(--box-shadow);
 
-    &:hover .overlay,
-    &:focus .overlay {
+    &:hover .projects__overlay,
+    &:focus .projects__overlay {
       transform: translateY(0%);
     }
   }
 }
 
-.overlay {
+.projects__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -108,7 +108,7 @@
   transition: transform 250ms var(--trainsition-timing-function);
 }
 
-.portfolio-img-wrapper {
+.projects__img {
   position: relative;
   overflow: hidden;
 }
